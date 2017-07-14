@@ -1,0 +1,28 @@
+
+.todo-container ul{
+    list-style: none;
+}
+
+.todo-list li{
+    color: green;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.todo-list li.completed{
+    color: gray;
+}
+
+.filter{
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+.filter a, .filter span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
