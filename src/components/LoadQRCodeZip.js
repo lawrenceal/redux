@@ -3,6 +3,9 @@ import QRCode from 'qrcode';
 import JSZip from 'jszip';
 import FileSaver from 'file-saver'
 
+//npm install file-saver --save
+//npm install qrcode
+//npm install jszip
 
 class LoadQRCodeZip extends React.Component{
 
