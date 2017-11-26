@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import todoReduces from './reduces/todo';
 import TodoApp from './components/TodoApp';
+import QRCodeZip from './components/LoadQRCodeZip'
 
 import './style/index.css';
 
@@ -17,10 +18,12 @@ ReactDOM.render(
                 <ul className="menu">
                     <li><Link to="/">index</Link></li>
                     <li><Link to="/todolist">todolist</Link></li>
+                    <li><Link to="/QRCodeZip">QRCodeZip</Link></li>
                 </ul>
                 <Switch>
                     <Route path="/" exact render={() => (<h3>hello redux</h3>)}/>
                     <Route path="/todolist" component={TodoApp}/>
+                    <Route path="/QRCodeZip" component={QRCodeZip}/>
                 </Switch>
             </div>
         </BrowserRouter>
